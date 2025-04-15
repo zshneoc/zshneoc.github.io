@@ -1,0 +1,211 @@
+@import "../base/variables";
+/* ==================================================================
+About Us Page styles
+================================================================== */
+
+.aboutPage {
+  background-image: url(../images/aboutBanner.jpg);
+}
+.aboutIntro980 {
+  max-width: 980px;
+  margin: 20px auto;
+  text-align: center;
+}
+.aboutUs {
+  text-align: left;
+}
+.aboutDis {
+  color: #494847;
+  line-height: 24px;
+  .blackHD {
+    margin: 30px 0 5px 0;
+  }
+}
+.aboutConnect {
+  background-image: url(../images/home-bg.jpg);
+  background-attachment: fixed;
+  .formRow {
+    margin-top: 20px;
+  }
+  label {
+    display: table-cell;
+    vertical-align: middle;
+    width: 30%;
+    font-weight: 400;
+    color: $WhiteColor;
+    margin: 0;
+  }
+  .inputText {
+    padding: 8px;
+    border: 0px;
+    vertical-align: middle;
+    display: table-cell;
+    width: 100%;
+    color: $blackColor;
+    background-color: $WhiteColor;
+  }
+  h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    @media (max-width: $md) {
+      font-size: 23px;
+    }
+  }
+}
+.formRow {
+  display: table;
+  width: 100%;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  text-align: left;
+}
+.submitOuter {
+  margin-top: 30px;
+}
+.btmConnect {
+  text-align: center;
+  color: $blackColor;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+  padding: 40px 0;
+  @media (max-width: $md) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+/* ==================================================================
+Team Section styles
+================================================================== */
+#meetTeam {
+  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.teamCon {
+  margin-top: 40px;
+}
+.teamBox {
+  position: relative;
+  overflow: hidden;
+  padding: 0.5px !important;
+  transition: all linear 0.3s;
+  img {
+    width: 100%;
+    height: 364px;
+    object-fit: cover;
+  }
+  &:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    z-index: 1;
+    transform: scale(1.08);
+    .teamHover {
+      left: 0px;
+    }
+  }
+}
+.teamHover {
+  position: absolute;
+  padding: 25px;
+  text-align: left;
+  left: -110%;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 6;
+  color: $WhiteColor;
+  font-size: 15px;
+  transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    bottom: 0px;
+    right: 1px;
+    left: 0px;
+    background: $primaryColor;
+    z-index: -1;
+    opacity: 0.8;
+  }
+  .followsmenu.fixedFollow {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+.teamAbout {
+  line-height: 24px;
+}
+.teamName {
+  font-size: 25px;
+  color: $WhiteColor;
+}
+.teamDegination {
+  font-size: 15px;
+  font-style: italic;
+  margin: 5px 0 12px;
+}
+#whatShould {
+  .col-sm-6 {
+    text-align: left;
+    margin: 25px 0;
+  }
+}
+.thinkHd {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: $blackColor;
+  font-weight: 600;
+}
+.followsmenu {
+  padding-bottom: 10px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  width: 100%;
+  a {
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: top;
+    background: url(../images/menusocial.png) no-repeat;
+
+    &.facebook {
+      background-position: 0px 0px;
+    }
+    &.twitter {
+      background-position: -45px 0px;
+    }
+    &.google {
+      background-position: -90px 0px;
+    }
+    &.instagram {
+      background-position: -135px 0px;
+    }
+    &.linkdin {
+      background-position: -91px 0px;
+    }
+    &.pintrest {
+      background-position: -228px 0px;
+    }
+    &.be {
+      background-position: -182px 0px;
+    }
+    &.other {
+      background-position: -273px 0px;
+    }
+  }
+}
+.grayBg {
+  background: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+}

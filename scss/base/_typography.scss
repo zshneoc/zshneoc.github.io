@@ -1,0 +1,34 @@
+/* ==================================================================
+Heading styles
+================================================================== */
+.mainHd {
+  font-size: 38px;
+  color: $blackColor;
+  line-height: 38px;
+  margin-bottom: 10px;
+  color: $primaryColor;
+  font-weight: 600;
+}
+.subHd {
+  font-size: 26px;
+  color: $blackColor;
+  line-height: 28px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.grayHD {
+  color: $GrayMediumColor;
+}
+.blackHD {
+  font-size: 38px;
+  color: $GrayDarkColor;
+  font-family: $MuliFont;
+  font-weight: 300;
+  line-height: 1;
+  @media (max-width: $lg) {
+    font-size: 22px;
+  }
+}
+.black-color {
+  color: $blackColor;
+}

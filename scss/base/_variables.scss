@@ -1,0 +1,55 @@
+// Colors Variables
+
+$primaryColor: #008ed6;
+// $primaryColor: #95c41f;
+// $primaryColor: #e8554e;
+// $primaryColor: #f27849;
+// $primaryColor: #ffaa11;
+// $primaryColor: #b35c28;
+// $primaryColor: #2d695c;
+// $primaryColor: #39cfaa;
+// $primaryColor: #4778de;
+// $primaryColor: #b70915;
+
+$WhiteColor: #fff;
+$blackColor: #000;
+$CreamColor: #f7f8fa;
+
+$GrayLightColor: #efefef;
+$GrayLightColorOpt1: #f5f5f5;
+$GrayLightColorOpt2: #a4a4a4;
+
+$GrayMediumColor: #555555;
+$GrayMediumColorOp1: #444;
+$GrayMediumColorOp2: #727272;
+$GrayMediumColorOp3: #4b4b4b;
+
+$GrayDarkColor: #262f3c;
+$GrayDarkColorOpt2: #222;
+
+// Font Family Variables
+
+$MuliFont: Muli, sans-serif;
+$FontAwesome: "Font Awesome 5 Pro";
+$arial: arial;
+
+// Text Variables
+
+$smallTextSize: 14px;
+$defaultTextSize: 16px;
+$defaultLineHeight: 22px;
+
+// Media Query Brack Points
+
+$desktop: 1170px;
+$lg: 992px;
+$md: 767px;
+$sm: 604px;
+$bs-sm: 576px;
+$xsm: 479px;
+$sm-360: 361px;
+
+// Px to em conversion
+@function em($pixels, $context: $defaultTextSize) {
+  @return calc($pixels / $context) * 1em;
+}

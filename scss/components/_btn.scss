@@ -1,0 +1,91 @@
+@import "../base/variables";
+
+/* ==================================================================
+Buttons styles
+================================================================== */
+.disabled {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.button {
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: $MuliFont;
+  &:hover {
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+/*Full Width Button  */
+
+.button-fill-width {
+  width: 100%;
+  display: block;
+}
+/*Button Size */
+.button.small {
+  padding: 5px 15px;
+  font-size: 14px;
+}
+.button.medium {
+  padding: 10px 30px;
+  font-size: 17px;
+  @media (max-width: $md) {
+    .col-sm-6.col-md-4 {
+      padding: 8px 20px;
+      font-size: 15px;
+    }
+  }
+}
+.button.large {
+  padding: 15px 35px;
+  font-size: 20px;
+}
+
+/*Button Styles */
+.btn-default {
+  background-color: $GrayLightColor;
+  border: solid 1px #ddd !important;
+  color: $blackColor !important;
+  &:hover {
+    background-color: $GrayMediumColor;
+    border: solid 1px #fff !important;
+    color: $WhiteColor !important;
+  }
+}
+.btn-theme {
+  background-color: $primaryColor;
+  border: solid 1px $primaryColor !important;
+  color: $WhiteColor !important;
+  &:hover {
+    background-color: $GrayMediumColor;
+    border: solid 1px #fff !important;
+    color: $WhiteColor !important;
+  }
+}
+.btn-theme-invert {
+  background-color: $WhiteColor;
+  border: solid 1px $primaryColor;
+  color: $primaryColor;
+  &:hover {
+    background-color: $GrayMediumColor;
+    border: solid 1px #fff;
+    color: $WhiteColor;
+  }
+}
+.btn-white {
+  background-color: $WhiteColor;
+  color: $primaryColor;
+  border: solid 1px $primaryColor !important;
+  &:hover {
+    background-color: $GrayMediumColor;
+    border: solid 1px #fff !important;
+    color: $WhiteColor;
+  }
+}

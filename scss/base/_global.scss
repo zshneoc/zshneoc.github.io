@@ -1,0 +1,179 @@
+@import "./variables";
+@import "./fonts";
+@import "./typography";
+@import "./forms";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+div,
+a,
+span,
+input,
+select,
+textarea,
+li,
+img,
+i,
+ul,
+li {
+  behavior: url(css/PIE.htc);
+}
+body {
+  font-size: 16.4px;
+  line-height: normal;
+  font-family: "Raleway", sans-serif;
+  background-color: #fff;
+  line-height: 28px;
+  color: #7f7f7e;
+
+  @media (max-width: $md) {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+}
+a,
+input[type="submit"] {
+  outline: none;
+  text-decoration: none;
+  text-decoration: none;
+  -ms-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  text-decoration: none;
+  color: #333333;
+}
+a:hover,
+.activeLink {
+  text-decoration: none;
+  color: $blackColor;
+}
+a:active,
+a:focus {
+  outline: none;
+  border: 0px;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+input,
+textarea,
+select {
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+form {
+  margin: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+strong {
+  font-weight: 500;
+}
+img {
+  border: none;
+  max-width: 100%;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+}
+.clearfix {
+  clear: both;
+}
+
+.tal {
+  text-align: left;
+}
+.tar {
+  text-align: right;
+}
+.taj {
+  text-align: justify;
+}
+.tac {
+  text-align: center;
+}
+.vAlign {
+  vertical-align: middle;
+}
+.themeColor {
+  color: $primaryColor;
+}
+.blaclColor {
+  color: $blackColor !important;
+}
+label {
+  font-weight: 400;
+  color: $blackColor;
+}
+.section {
+  padding: 80px 0;
+}
+.section.section-light-gray {
+  background-color: #f9f8f8;
+}
+.semiBold {
+  font-weight: 400;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+}
+.font16 {
+  font-size: 16px !important;
+}
+.line-1 {
+  height: 1px;
+  width: 100%;
+  background-color: #eaeaea;
+}
+.number {
+  font-family: arial;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.featureOuter,
+footer,
+.section {
+  @media (max-width: $md) {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+}
+@import "./forms";
+@import "../components/breadcrumb";
+@import "../components/btn";
+@import "../components/call-out";
+@import "../components/modal";
+@import "../components/slider";
+
+@import "../components/pricing-table";
+@import "../components/testimonials";

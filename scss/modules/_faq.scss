@@ -1,0 +1,112 @@
+@import "../base/variables";
+/* ==================================================================
+ FAQ Accordion styles
+================================================================== */
+.faqOuter {
+  text-align: left;
+  margin-bottom: 30px;
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 30px;
+  .subHd {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+}
+.panel-group {
+  .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: $GrayLightColor;
+  }
+}
+.panel-default {
+  > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: $GrayDarkColorOpt2;
+    background-color: #fafafa;
+    border-color: $GrayLightColor;
+    + {
+      .panel-collapse {
+        > .panel-body {
+          border-top-color: $GrayLightColor;
+        }
+      }
+    }
+  }
+}
+.panel-title {
+  > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+  }
+  > a[aria-expanded="true"] {
+    background-color: $primaryColor;
+    border: solid 1px #008ed6;
+    color: $WhiteColor !important;
+  }
+}
+.more-less.fa {
+  float: right;
+  font-size: 32px;
+  margin: 0px 0px 0 0;
+  color: #8491a5;
+  font-weight: 300;
+}
+.more-less.fa-times-circle {
+  font-size: 22px;
+  margin: 3px -3px 0 0;
+  color: $primaryColor;
+  font-weight: 600;
+  box-shadow: 1px 1px 3px 3px rgb(0 0 0 / 5%);
+  border-radius: 50%;
+}
+.faqByCat {
+  text-align: center;
+  a {
+    width: 100%;
+    padding: 30px;
+    margin: 15px 0;
+    text-transform: capitalize;
+    border-radius: 5px;
+    &:hover {
+      background-color: $primaryColor;
+    }
+    i {
+      display: block;
+      margin: 10px;
+      font-size: 30px;
+    }
+  }
+}
+.accordion {
+  .card-header {
+    padding: 0;
+    background-color: transparent;
+    border-bottom: 0;
+    a {
+      padding: 0.75rem 1.25rem;
+      display: block;
+      background-color: transparent;
+      font-size: 22px;
+    }
+  }
+  .card {
+    border: 1px solid #e8e8e8 !important;
+    background: transparent;
+    transition: 0.15s ease;
+    border-radius: 10px !important;
+    padding: 16px;
+    + {
+      .card {
+        margin-top: 30px;
+      }
+    }
+  }
+  .card.active {
+    border: 1px solid #fff !important;
+    box-shadow: 0 0 24px 0 rgb(75 81 91 / 12%);
+    background: #ffffff;
+  }
+}
