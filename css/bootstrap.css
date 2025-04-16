@@ -632,6 +632,10 @@ pre code {
   margin-left: auto;
 }
 
+.brand-list {
+  display: flex;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
