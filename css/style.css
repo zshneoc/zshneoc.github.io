@@ -4919,7 +4919,7 @@ footer>div {
   justify-content: center;
 }
 
-.service-head:after {
+/* .service-head:after {
   position: absolute;
   content: "";
   width: 10px;
@@ -4930,7 +4930,7 @@ footer>div {
   border-right: 50px solid transparent;
   border-top: 30px solid rgb(51, 51, 51);
   bottom: -28px;
-}
+} */
 
 .service-text {
   font-size: 4.4rem;
