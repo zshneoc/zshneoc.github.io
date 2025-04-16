@@ -2644,7 +2644,7 @@ footer>div {
 
 .haevQuestion {
   color: #fff;
-  text-align: right
+  /* text-align: right */
 }
 
 @media(max-width: 767px) {
