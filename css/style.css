@@ -1940,7 +1940,7 @@ header.fixed .megaDropDown>ul {
   color: #fff
 }
 
-.slider-one_pattern {
+/* .slider-one_pattern {
   background-image: url("../images/pattern-1.png");
   position: absolute;
   right: -50px;
@@ -1971,7 +1971,7 @@ header.fixed .megaDropDown>ul {
   -o-animation-iteration-count: infinite;
   -o-animation-timing-function: linear;
   opacity: .8
-}
+} */
 
 @keyframes zoom-fade {
   0% {
@@ -2449,14 +2449,15 @@ header.fixed .megaDropDown>ul {
 }
 
 footer {
-  background-image: url(../images/contact.jpg);
+  background-image: url(../images/index-15.jpg);
+  background-position: 15% 15%;
   position: relative;
-  background-size: cover
+  background-size: cover;
 }
 
 @media(min-width: 1170px) {
   footer {
-    background-position: center
+    /* background-position: center */
   }
 }
 
@@ -4382,8 +4383,19 @@ footer>div {
   }
 }
 
+.expanding-value-worldwide {
+  background-image: url(../images/banner-map.jpg);
+  position: relative;
+  background-size: cover;
+}
+
 .serviceOuter {
-  background-color: #fff
+  /* background-image: url(../images/rana-sawalha-364253-unsplash.jpg); */
+  /* background-color: #fff */
+  /* background-image: url(../images/index-15.jpg);
+  background-position: 15% 15%;
+  position: relative;
+  background-size: cover; */
 }
 
 .introText {
@@ -4508,7 +4520,7 @@ footer>div {
   border-right: solid 1px #ddd;
   border-bottom: solid 1px #ddd;
   position: relative;
-  min-height: 410px;
+  min-height: 370px;
   padding-top: 30px
 }
 
@@ -4522,9 +4534,16 @@ footer>div {
   font-family: Muli, sans-serif
 }
 
+.serviceBox .detail {
+  margin-bottom: 20px;
+  display: inline-block;
+  margin-top: 20px;
+  width: 80%;
+}
+
 @media(max-width: 992px) {
   .serviceBox a {
-    font-size: 18px
+    /* font-size: 18px */
   }
 }
 
